@@ -1,0 +1,56 @@
+.containerVeiculo{
+    padding: 23px 133px;
+}
+
+.divTitleVeiculo{
+    text-align: center;
+    background: rgb(137 194 242);
+    border-radius: 10px;
+}
+
+.divTitleContainer{
+    border: 1px solid;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.titleVeiculo{
+    font-weight: bold;
+}
+
+.containerSelect{
+    background: #b4d2eb;
+    border-radius: 10px;
+}
+
+.form-select{
+    background: rgb(180, 210, 235);
+}
+
+.infosVeiculo{
+    text-align: left;
+    padding: 27px 10px;
+    border:1px solid;
+}
+
+.form-control{
+    font-size: 24px;
+}
+
+.btnSimular{
+    height: 51px;
+    font-size: 25px;
+    background: rgb(137, 194, 242);
+}
+
+.divTitleSimulacao{
+    border-bottom: 1px solid;
+}
+
+.h2titleSimulacao{
+    font-weight: bold;
+}
+
+.valoresSimulados{
+    padding: 24px;
+    text-align: left;
+}

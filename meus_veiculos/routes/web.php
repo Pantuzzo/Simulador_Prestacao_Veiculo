@@ -1,17 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\VeiculosController;
 
-Route::get('/vue-teste', function () {
-    return view('vue-teste');
- });
 
-Route::get('/', function () {
-    return view('vue-teste');
-});
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('index');
 
-Auth::routes();
+Route::get('/api/veiculos', [App\Http\Controllers\HomeController::class, 'getAllveiculos'])->name('getAllveiculos');
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/', [App\Http\Controllers\VeiculosController::class, 'index'])->name('veiculo');
+Route::get('/api/veiculo/{id}', [App\Http\Controllers\HomeController::class, 'getVeiculo'])->name('getVeiculo');
+
+Route::post('/api/simulacao/', [App\Http\Controllers\HomeController::class, 'simulacaoValores'])->name('simulacaoValores');
