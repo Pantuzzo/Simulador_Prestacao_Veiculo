@@ -11,10 +11,13 @@
       <h3>> R$ {{valueInfo | formataValor}}</h3>
     </div>
     <div class="divSolicitaSimulacao" v-if="selectId != ''">
-        <h2>Simulação de Financiamento</h2>
+        <h2 class="simulacaoTitle">Simulação de Financiamento</h2>
+        <div class="digiteEntrada">
+          <label>Digite o valor de entrada:</label>
+        </div>
         <div class="input-group mb-3">
           <input name="valor" style="display:none;" :value="valueInfo">
-          <money name="valorEntrada" class="form-control" v-bind="money" placeholder="Informe o valor" aria-label="Informe o valor" aria-describedby="basic-addon2" v-model="valorSimulado"></money>
+          <money name="valorEntrada" class="form-control" aria-placeholder="Valor de entrada" v-bind="money" placeholder="Informe o valor" aria-label="Informe o valor" aria-describedby="basic-addon2" v-model="valorSimulado"></money>
           <div class="input-group-append">
             <button class="btn btn-outline-secondary btnSimular" type="submit" @click="simulacaoVeiculo()">Simular</button>
           </div>

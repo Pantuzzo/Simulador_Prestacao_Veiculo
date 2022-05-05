@@ -5404,6 +5404,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "listsExpends",
@@ -28278,7 +28281,11 @@ var render = function () {
     _vm._v(" "),
     _vm.selectId != ""
       ? _c("div", { staticClass: "divSolicitaSimulacao" }, [
-          _c("h2", [_vm._v("Simulação de Financiamento")]),
+          _c("h2", { staticClass: "simulacaoTitle" }, [
+            _vm._v("Simulação de Financiamento"),
+          ]),
+          _vm._v(" "),
+          _vm._m(0),
           _vm._v(" "),
           _c(
             "div",
@@ -28297,6 +28304,7 @@ var render = function () {
                     staticClass: "form-control",
                     attrs: {
                       name: "valorEntrada",
+                      "aria-placeholder": "Valor de entrada",
                       placeholder: "Informe o valor",
                       "aria-label": "Informe o valor",
                       "aria-describedby": "basic-addon2",
@@ -28338,7 +28346,7 @@ var render = function () {
     _vm._v(" "),
     _vm.parcela_6 != ""
       ? _c("div", [
-          _vm._m(0),
+          _vm._m(1),
           _vm._v(" "),
           _c("div", { staticClass: "valoresSimulados" }, [
             _c("h4", { staticClass: "simulacao_48" }, [
@@ -28364,6 +28372,14 @@ var render = function () {
   ])
 }
 var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "digiteEntrada" }, [
+      _c("label", [_vm._v("Digite o valor de entrada:")]),
+    ])
+  },
   function () {
     var _vm = this
     var _h = _vm.$createElement

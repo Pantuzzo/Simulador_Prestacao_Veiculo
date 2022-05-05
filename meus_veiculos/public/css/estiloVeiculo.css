@@ -54,3 +54,12 @@
     padding: 24px;
     text-align: left;
 }
+
+.digiteEntrada{
+    text-align: left;
+    font-size: 20px;
+}
+
+.simulacaoTitle{
+    font-weight: bold;
+}
