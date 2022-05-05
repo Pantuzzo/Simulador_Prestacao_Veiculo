@@ -6,7 +6,7 @@
 - composer
 - mysql
 
-# Despesas
+# SIMULAÇÃO DE PREÇO VEÍCULO
  Teste Seletivo Listra Digital
 
 # PARA INSTALAR
@@ -22,7 +22,7 @@
 
 # CONFIGURAÇÕES
 - renomar o .env.example para .env 
-- criar um database despesas
+- criar um database veiculo
 
 ## CONEXÕES
 - DB_CONNECTION=mysql
