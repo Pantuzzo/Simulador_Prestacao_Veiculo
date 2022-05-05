@@ -18,6 +18,7 @@
 - composer update
 - composer install
 - npm install v-money
+- npm install autoprefixer@10.4.5 --save-exact
 
 # CONFIGURAÇÕES
 - renomar o .env.example para .env 
